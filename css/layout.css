@@ -3,3 +3,29 @@
     margin: 0;
     padding: 0;
 }
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 460px 150px;
+    max-width: 1000px;
+    margin: 3rem auto;
+}
+.main {
+    display: grid;
+    grid-template-columns: 680px 300px;
+    column-gap: 20px;
+}
+.main__content {
+    display: grid;
+    grid-template-rows: 230px 230px;
+    row-gap: 15px;
+}
+.main__sidebar {
+    display: grid;
+    grid-template-rows: repeat(3, 150px);
+    row-gap: 15px;
+}
+
+.header, .footer, .main__content__item--1, .main__content__item--2, .main__sidebar__item--1, .main__sidebar__item--2, .main__sidebar__item--3 {
+    padding: 15px;
+}
